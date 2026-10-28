@@ -14,7 +14,7 @@ def fn_CalcularDescuento_fl(precio_total_fl, tipo_cliente_str):
     """
 
     if tipo_cliente_str == "VIP":
-        precio_final_fl = precio_total_fl * 0.20
+        precio_final_fl = precio_total_fl * 0.80 #!El descuento no era correcto
     elif tipo_cliente_str == "HABITUAL":
         precio_final_fl = precio_total_fl * 0.90
     else:
@@ -31,7 +31,7 @@ def fn_ProcesarListaVentas_fl(ventas_lst):
     
     while i < len(ventas_lst):
         total_fl += ventas_lst[i]
-        i = i+1 #ERROR ENCONTRADO: NO SUMABA EL INDICE EN EL WHILE
+        i = i+1 #!ERROR ENCONTRADO: NO SUMABA EL INDICE EN EL WHILE
 
     return total_fl
 
