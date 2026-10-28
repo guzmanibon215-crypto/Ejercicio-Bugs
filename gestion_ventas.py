@@ -40,7 +40,7 @@ def fn_EvaluarObjetivoDiario_bool(total_ventas_fl, objetivo_int=500):
     Evalúa si se ha alcanzado el objetivo mínimo de ventas diarias.
     """
 
-    if total_ventas_fl >= objetivo_int: 
+    if total_ventas_fl >= objetivo_int: #!El total_ventas tiene que ser mayor o igual a objetivo_int, el objetivo no puede ser mayor que el total de ventas.
         alcanzado_bool = True
     else:
         alcanzado_bool = False
